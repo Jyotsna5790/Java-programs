@@ -1,0 +1,23 @@
+
+public class fibdowhile {
+	
+		public static void main(String[] args) 
+		{
+			 int maxNumber = 10, previousNumber = 0, nextNumber = 1;
+		        System.out.print("Fibonacci Series of "+maxNumber+" numbers:");
+	 
+		        int i=1;
+		        do
+		        {
+		            System.out.print(previousNumber+" ");
+		            int sum = previousNumber + nextNumber;
+		            previousNumber = nextNumber;
+		            nextNumber = sum;
+		            i++;
+		        }while(i <= maxNumber);
+	 
+		}
+	 
+	}
+
+
